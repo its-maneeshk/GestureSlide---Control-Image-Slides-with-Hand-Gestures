@@ -19,4 +19,18 @@ GestureSlide is an open-source application that allows you to browse images usin
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+pip install pyinstaller
+
+Run PyInstaller to Create an Executable
+Use this command to package everything into a single file (.exe):
+
+powershell
+Copy
+Edit
+pyinstaller --onefile --windowed --icon=icon.ico --name="GestureSlide" image_slider.py
+🔹 Options Explained:
+
+--onefile → Creates a single .exe file.
+--windowed → Hides the console (useful for GUI apps).
+--icon=icon.ico → Sets an icon for the .exe (optional).
+--name="GestureSlide" → Sets the output .exe name.
